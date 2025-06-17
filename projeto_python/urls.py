@@ -22,7 +22,10 @@ from django.urls import path, include # Incluindo as urls dos Apps
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('deverick.urls') ) # Buscando as urls dentro do Apps 'DevErick'
+    path('', include('deverick.urls') ), # Buscando as urls dentro do Apps 'DevErick'
+
+    # Alinhamento de Urls
+    path('erick/', include('deverick.urls') ), # Criando um subdominio # dominio.com/erick/
 
 
 ]
