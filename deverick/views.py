@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'page/home.html') # Redenizar o arquivo HTML com o 'render'
 
 def sobre(request):
-    return HttpResponse('SOBRE 2')
+    return render(request, 'page/sobre.html')
 
 def contato(request):
-    return render(request, 'me-apague/temp.html') # Teste para verificar o DIR
+    return render(request, 'page/contato.html')
