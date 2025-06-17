@@ -20,11 +20,23 @@ from django.http import HttpResponse
 
 # Cliente(Pede) < (Server)Responde
 # Http Request < Http Response
-def my_view(request):
-    return HttpResponse('UMA LINDA STRING')
+def home(request):
+    return HttpResponse('HOME')
+
+def sobre(request):
+    return HttpResponse('SOBRE')
+
+def contato(request):
+    return HttpResponse('CONTATO')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sobre/', my_view),
+    path('', home),
+    path('sobre/', sobre),
+    path('contato/', contato),
+
 ]
+
+# Proxima etapa é criar APPs para gerencias as páginas!
+# É inviavél ficar adicionando path e def para criação de páginas!
