@@ -9,4 +9,4 @@ def sobre(request):
     return HttpResponse('SOBRE 2')
 
 def contato(request):
-    return HttpResponse('CONTATO 2')
+    return render(request, 'me-apague/temp.html') # Teste para verificar o DIR

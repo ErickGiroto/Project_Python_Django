@@ -58,6 +58,7 @@ TEMPLATES = [
         'DIRS': [ 
 
             BASE_DIR / 'base_templates',
+            BASE_DIR / 'deverick' / 'template_temp', # Teste para verificar o DIR
 
         ], # Mostrando para o Django quais pastas adicionais buscar fora do Apps
         'APP_DIRS': True,
