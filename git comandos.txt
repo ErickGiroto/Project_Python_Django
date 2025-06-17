@@ -1,0 +1,24 @@
+Criar Chave externa:
+ssh-keygen -t rsa -b 4096 -C "erick_giroto@hotmail.com"
+
+Inicia:
+eval "$(ssh-agent -s)"
+
+Adicione SSH:
+ssh-add ~/.ssh/id_rsa
+
+Copia Chave:
+clip < ~/.ssh/id_rsa.pub
+
+Defina o global:
+git config --global user.name "ErickGiroto"
+git config --global user.email "erick_giroto@hotmail.com"
+
+
+Comando do Git Bash:
+git init
+git remote add origin git@github.com:ErickGiroto/Project_Python_Django.git
+git branch -M master
+git add .
+git commit -m "Configuracao do Django"
+git push -u origin master
