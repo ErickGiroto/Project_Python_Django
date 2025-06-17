@@ -22,3 +22,5 @@ git branch -M master
 git add .
 git commit -m "Configuracao do Django"
 git push -u origin master
+
+git status
