@@ -55,7 +55,11 @@ ROOT_URLCONF = 'projeto_python.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ 
+
+            BASE_DIR / 'base_templates',
+
+        ], # Mostrando para o Django quais pastas adicionais buscar fora do Apps
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
